@@ -15,7 +15,7 @@ from plugins import *
     name="qushuiyin",
     desire_priority=100,
     hidden=True,
-    desc="取水印插件",
+    desc="去水印插件",
     version="0.1",
     author="lanvent",
 )

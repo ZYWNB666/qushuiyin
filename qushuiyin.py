@@ -51,7 +51,7 @@ class qushuiyin(Plugin):
                 video_url = response_json['video']
                 reply = Reply(ReplyType.VIDEO_URL, video_url)
             else:
-                reply = Reply(ReplyType.ERROR, "请发送短视频分享的内容")
+                reply = Reply(ReplyType.ERROR, "请输入 去水印+抖音链接，即可获取无水印视频\n比如：\n@ChatGPT 去水印 6.66 复制打开抖音，看看【子杭的作品】《晕倒是你的谎言》# 迷惑行为大赏 # 意想不到的... https://v.douyin.com/iLDK86rp/ Pkp:/ 12/24 W@Z.Zm")
 
             e_context["reply"] = reply
             e_context.action = EventAction.BREAK_PASS  # 事件结束，并跳过处理context的默认逻辑
